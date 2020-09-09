@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .no1{
+            background-color: pink;
+            width: 120px;
+            height: 80px;
+            margin: 20rem auto;
+            /* 首先强制单行显示 */
+            white-space: nowrap;
+            /* 隐藏多余部分 */
+            overflow: hidden;
+            /* 替换省略号 */
+            text-overflow: ellipsis;
+        }
+        .no2{
+            background-color: pink;
+            width: 120px;
+            height: 80px;
+            margin: 25rem auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 弹性伸缩盒子模型 */
+            display: -webkit-box;
+            /* 限制一个快元素的文本行数 */
+            -webkit-line-clamp: 2;
+            /* 设置或检索伸缩和对象的子元素排列方式 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+    <!-- 单行文字溢出 -->
+    <div class="no1">
+        随便写写，此处省略一万字。
+    </div>
+    <!-- 多行文字溢出 -->
+    <div class="no2">
+        随便写写，此处省略一万字。
+        随便写写，此处省略一万字。
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .box{
+            width: 0;
+            height: 0;
+            /* 调整上三角的高度 就是直角三角形的高度 */
+            /* 颜色改为透明  */
+            border-top: 100px solid transparent;
+            border-right: 50px solid green;
+            /* 去掉底部就变成直角三角形 */
+            /* border-bottom: 50px solid yellow; */
+            /* border-left: 50px solid blue; */
+        }
+        .box2{
+            width: 0;
+            height: 0;
+            border-color: transparent red transparent transparent;
+            border-style: solid;
+            border-width: 22px 8px 0 0;
+        }
+    </style>
+<body>
+    <!-- 按照原本生成三角形的方式，去除掉底部的三角形，则会出现直角三角形，
+    通过调整上部三角形的高度 则调整了直角三角形的高度 -->
+    <div class="box">
+
+    </div>
+    <div class="box2"></div>
+</body>
+
+</html>

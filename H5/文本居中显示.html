@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img1{
+            vertical-align: middle;
+        }
+        div{
+            border: 1px solid red;
+        }
+        #img2{
+            /* vertical-align: bottom; */
+            /* vertical-align: top; */
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/introt1.jpg" alt="我老婆" id="img1"> 让文本居中显示
+
+    <div>
+        <!-- 此时图片下方会有留白 原因是 默认 vertical-align 是 baseline 所以会有一部分空白是留给英文字母超出基线的 -->
+        <img src="images/introt1.jpg" alt="我老婆"> ppjjgg
+    </div>
+    <!-- 去除的方式就是将图片 设置verticalaline 除基线外任意 -->
+    <div>
+        <!-- 此时图片下方会有留白 原因是 默认 vertical-align 是 baseline 所以会有一部分空白是留给英文字母超出基线的 -->
+        <img src="images/introt1.jpg" alt="我老婆" id="img2"> ppjjgg
+    </div>
+</body>
+</html>

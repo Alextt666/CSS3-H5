@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            list-style: none;
+            float: left;
+            width: 80px;
+            height: 100px;
+            border: 1px solid red;
+            margin-left: -1px;
+        }
+        ul li:hover{
+            /* 如果没有定位通过添加定位 可以显示当前 
+            如果有 就改变zindex的层级 */
+            position: relative;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>
